@@ -152,7 +152,7 @@ resource "azurerm_virtual_machine_data_disk_attachment" "data_disk_attachment" {
 }
 
 module "diagnostic_settings" {
-  source = "git::https://github.com/OmerBrumer/module-diagnostic-setting.git"
+  source = "git::https://github.com/OmerBrumer/module-diagnostic-setting.git?ref=dev"
 
   diagonstic_setting_name    = "${var.vm_name}-diagnostic-setting"
   log_analytics_workspace_id = var.log_analytics_workspace_id
